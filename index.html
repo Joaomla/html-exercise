@@ -4,14 +4,25 @@
 <title>HTML Project</title>
 </head>
 <body>
-
-<p>
-	Date()
+<h3>
+<p id = "date">
 </p>
+</h3>
 
 
 <h1>Check out these cool repositories</h1>
 <a href="https://github.com/Joaomla/html-project"> HTML Project </a>
 
+<script>
+	function setTime()
+	{
+		document.getElementById("date").innerHTML = Date();
+	}
+	
+	setTime();
+	setInterval(setTime, 1000);
+</script>
+
 </body>
+
 </html> 
