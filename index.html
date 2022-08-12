@@ -4,11 +4,16 @@
 <title>HTML Project</title>
 </head>
 <body>
+
+<center>
+<h1> Welcome to the my HTML Project </h1>
+
 <h3>
 <p id = "date">
 </p>
 </h3>
 
+<br>
 
 <h1> Check out these cool repositories </h1>
 
@@ -28,15 +33,40 @@
 <a href="https://github.com/Joaomla/Chasing-Time"> Chasing Time - Unity Game </a>
 </p>
 
+
+<br>
+
+
+<h1> I also love drawing </h1>
+<a href="https://www.instagram.com/jo_oao_o/" target="_blank">
+<img src="assets/images/main/backpack.png" width="500" height="500" title="Check out my instagram!" id="image">
+</a>
+
+</center>
+
+
+<script src="scripts/require.js"></script>
+
 <script>
 	function setTime()
 	{
-		document.getElementById("date").innerHTML = Date();
+		var today = new Date();
+		document.getElementById("date").innerHTML = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 	}
 	
 	setTime();
-	setInterval(setTime, 1000);
+	setInterval(setTime, 1000);	
+	
+	var today = new Date();
+	console.log('g');
+	
+	var fs = require('fs');
+	var files = fs.readdirSync("assets/images/");
+	console.log('g');
+	
 </script>
+
+
 
 </body>
 
