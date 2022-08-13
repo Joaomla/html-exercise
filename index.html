@@ -39,33 +39,15 @@
 
 <h1> I also love drawing </h1>
 <a href="https://www.instagram.com/jo_oao_o/" target="_blank">
-<img src="assets/images/main/backpack.png" width="500" height="500" title="Check out my instagram!" id="image">
+<img src="assets/images/main/main0.png" width="500" height="500" title="Check out my instagram!" id="image">
 </a>
 
 </center>
 
 
-<script src="scripts/require.js"></script>
+<script src="scripts/getTime.js"></script>
 
-<script>
-	function setTime()
-	{
-		var today = new Date();
-		document.getElementById("date").innerHTML = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-	}
-	
-	setTime();
-	setInterval(setTime, 1000);	
-	
-	var today = new Date();
-	console.log('g');
-	
-	var fs = require('fs');
-	var files = fs.readdirSync("assets/images/");
-	console.log('g');
-	
-</script>
-
+<script src="scripts/changeImage.js"></script>
 
 
 </body>
