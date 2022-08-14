@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BMI Calculator </title>
+
+        <style>
+            .myDiv {
+                border: 5px outset red;
+                background-color: lightpink;
+                text-align: center;
+                width: fit-content;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:lightblue">
+
+        <center>
+            <div class="myDiv">
+                <h1> BMI Calculator </h1>
+                <div>
+                    <select name="units" oninput="changeUnits()" id="units">
+                        <option value="metric"> metric </option>
+                        <option value="imperial"> imperial </option>
+                    </select>
+                </div>
+                <p>
+                    <label> Your height </label>
+                    <input type="number" name="h" size="5" value="0" id="h">
+                    <label id="h_units"> cm </label>
+                </p>
+                <p>
+                    <label> Your weight </label>
+                    <input type="number" name="w" size="5" value="0" id="w">
+                    <label id="w_units"> kg </label>
+                </p>
+                
+                <button onclick="calculateBMI()"> Calculate </button>
+                </div>
+        
+            <p id="result">  </p>
+
+        </center>
+
+        <script src="../scripts/bmiCalculator.js"></script>
+    </body>
+</html>
