@@ -1,7 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        WorldBuilding Tool
+        <h1>Character Creator</h1>
+        <link rel="stylesheet" href="worldBuildingTool.css">
     </head>
     
+    <body>
+        <form>
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" id="name">
+
+                <table>
+                    <tr>
+                        <td>
+                            <label for="class">Class</label><br>
+                            <input type="text" id="class">
+                        </td>
+
+                        <td>
+                            <label for="background">Background</label><br>
+                            <input type="text" id="background">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="race">Race</label><br>
+                            <input type="text" id="race">
+                        </td>
+
+                        <td>
+                            <label for="alignment">Alignment</label><br>
+                            <input type="text" id="alignment">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <section class="container">
+                <div class="left">
+                    <div class="container">
+                        <div class="left50"> Hello </div>
+                        <div class="right50"> Goodbye </div>
+                    </div>
+                    
+                    <label for="passive_wisdom"> Passive Wisdom </label>
+                    <input type="range" id="passive_wisdom" name="passive_wisdom" min="0" max="20" step="1" value="10"><br>
+
+                    <label for="other_proficiencies_and_languages"> Other Proficiencies & Languages </label>
+                    <input type="text" id="other_proficiencies_and_languages" style="width: auto; height: 200px;">
+                </div>
+
+                <div class="middle">gas</div>
+                <div class="right">rr</div>
+            </section>
+        </form>
+    </body>
 </html>

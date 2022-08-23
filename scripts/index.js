@@ -18,6 +18,16 @@ function setImage()
 setImage();
 setInterval(setImage, 5000)
 
+function clickBMI()
+{
+  window.location.href="pages/BMICalculator.html";
+}
+
+function clickWorldBuildingTool()
+{
+  window.location.href="pages/worldBuildingTool.html";
+}
+
 const RGBToHSL = (r, g, b) => {
     r /= 255;
     g /= 255;
